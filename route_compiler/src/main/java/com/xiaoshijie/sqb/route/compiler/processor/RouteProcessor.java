@@ -23,6 +23,7 @@ import java.util.Set;
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Filer;
 import javax.annotation.processing.ProcessingEnvironment;
+import javax.annotation.processing.Processor;
 import javax.annotation.processing.RoundEnvironment;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
@@ -35,7 +36,7 @@ import javax.lang.model.util.Elements;
  * created on: 2020/5/29 11:58 AM
  * description:
  */
-@AutoService(Process.class)
+@AutoService(Processor.class)
 public class RouteProcessor extends AbstractProcessor {
 
     private Filer mFiler;
