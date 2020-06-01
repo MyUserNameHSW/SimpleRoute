@@ -1,0 +1,5 @@
+rootProject.name='SimpleRoute'
+include ':app'
+include ':route-annotation'
+include ':route_compiler'
+include ':simple-route-core'
