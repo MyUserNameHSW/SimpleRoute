@@ -53,19 +53,17 @@ public class RouteProcessor extends AbstractProcessor {
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
         if (CollectionUtils.isNotEmpty(annotations)) {
-            Set<? extends Element> routeElements = roundEnv.getElementsAnnotatedWith(Route.class);
-            try {
-                this.parseRoutes(routeElements);
 
-            } catch (Exception e) {
-            }
+            Set<? extends Element> routeElements = roundEnv.getElementsAnnotatedWith(Route.class);
+            this.parseRoutes(routeElements);
             return true;
         }
 
         return false;
     }
 
-    private void parseRoutes(Set<? extends Element> routeElements) throws IOException {
+    private void parseRoutes(Set<? extends Element> routeElements) {
+
         if (CollectionUtils.isEmpty(routeElements)) {
             return;
         }

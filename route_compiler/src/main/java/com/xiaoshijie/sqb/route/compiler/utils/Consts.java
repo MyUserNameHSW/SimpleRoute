@@ -9,5 +9,5 @@ public class Consts {
 
     public final static String ROUTE_PACKAGE_PATH = "com.xiaoshijie.sqb.route.compiler";
 
-    public final static String ROUTE_INTERFACE_PATH = "com.xiaoshijie.sqb.simple_route_core.IRouteMap";
+    public final static String ROUTE_INTERFACE_PATH = "com.xiaoshijie.sqb.simpleroute.IRouteMap";
 }
